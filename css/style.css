@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --white: #EEFDF3;
+    --primary: #16DB65;
+    --verde-claro: #2BA84A;
+    --verde-medio: #248232;
+    --verde-escuro: #2D3A3A; /* base body */
+    --background: #192525;
+    --black: #040F0F;
+
+    /* grafico */
+
+    --azul-escuro: #3A0CA3;
+    --azul-medio: #3A86FF;
+    --azul-claro: #00BBF9;
+    --roxo-escuro: #8338EC;
+    --roxo-claro: #9B5DE5;
+    --rosa-escuro: #FF006E;
+    --rosa-claro: #F15BB5;
+    --laranja-escuro: #FB5607;
+    --laranja-claro: #FFBE0B;
+    --amarelo: #FEE440;
+    --ciano: #00F5D4;
+
+    /* grafico */
+}
+a:hover {
+    text-decoration: underline;
+    color: var(--primary);
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+input {
+    outline: none;
+}
+html { 
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--verde-escuro);
+    position: relative;
+}
+/* header */
+header.home {
+    width: 100%;
+    height: 10vh;
+    padding: 0 25%;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.home > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+}
+header.home > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+header.home a:hover {
+    text-decoration: none;
+}
+header.home div div.login button:hover {
+   color: var(--primary);
+   transform: scale(1.1);
+   transition: all .3s;
+}
+header.home div div.signup {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--verde-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header.home div div.signup:hover {
+    background-color: var(--primary);
+    box-shadow: 0px 0px 0px 3px #16DB6550;
+}
+header.home div div.signup button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--background);
+}
+header.home img {
+    height: 70px;
+}
+/* header */
+
+/* main */
+main.home {
+    width: 100%;
+    height: auto;
+}
+main.home section {
+    padding: 1% 15%;
+
+}
+main.home section.apresentacao {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    position: relative;
+}
+main.home section.apresentacao div.descricao {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: flex-start;
+}
+main.home section.apresentacao div.descricao h2{
+    font-size: 3rem;
+}
+main.home section.apresentacao div.descricao p{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+main.home section.apresentacao div.descricao img{
+    width: 70px;
+    align-self: center;
+}
+main.home section.apresentacao div.vetor {
+    height: 100%;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main.home section.apresentacao div.vetor img {
+    width: 100%;
+    height: 100%;
+}
+
+main.home section.tipos-de-registro {
+    width: 100%;
+    height: 70vh;
+    background-color: #19252575;
+    position: relative;
+}
+main.home section.tipos-de-registro > div.title-section > h2 {
+    font-size: 1.8rem;
+}
+main.home section.tipos-de-registro > div.title-section {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main.home section.tipos-de-registro > div.registros {
+    width: 100%;
+    height: 95%;
+    padding: 5px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+main.home section.tipos-de-registro > div.registros div.registro {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f050;
+    border-radius: 6px;
+}
+main.home section.tipos-de-registro > div.registros div.text-registro {
+    width: 75%;
+    height: 200px;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 6px;
+}
+main.home section.tipos-de-registro > div.registros div.registro img {
+    width: 150px;
+    height: 100%;
+}
+
+/* main */
+
+/* footer */
+footer {
+    width: 100%;
+    height: 50vh;
+    padding: 0 15%;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer section.redes-sociais {
+    width: 100%;
+    height: 38%;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+}
+footer section.redes-sociais > div.name-logo > a {
+    padding: 5px;
+    text-decoration: none;
+}
+footer div.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer a > i {
+   font-size: 1.5rem;
+   color: var(--verde-medio);
+}
+footer a > i:hover {
+    color: var(--primary);
+    text-shadow: 0px 0px 10px #16DB65;
+}
+footer img {
+    width: 150px;
+}
+footer section.info {
+    width: 100%;
+    height: 55%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer section.info > div{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+footer section.info > div > div.links{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+footer section.info > div h2{
+    text-align: center;
+    padding-bottom: 5px;
+}
+footer section.licenca {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer select {
+    background-color: #2D3A3A;
+    border: none;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+}
+/* footer */
+
+/* login */
+main.login {
+    width: 100%;
+    height: 100%;
+    background-color: #000000dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+section.card-login {
+    width: 400px;
+    height: 600px;
+    background-color:#2D3A3A;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+section.card-login > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section.card-login .title-login{
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+section.card-login .title-login > span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+section.card-login .title-login > .x{
+    position: absolute;
+    right: 10px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+section.card-login .title-login > .x i{
+    font-size: 2.5rem;
+}
+section.card-login .title-login > .x i:hover{
+    color: var(--primary);
+}
+section.card-login .content-login {
+    width: 100%;
+    height: 60%;
+}
+section.card-login .content-login > form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+section.card-login .content-login > form > div {
+    width: auto;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+}
+section.card-login .content-login > form > div > input {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #EEFDF325;
+    border: 2px solid var(--primary);
+}
+section.card-login > .fazer-login {
+    width: 80%;
+    height: 30%;
+    border-top: 1px solid #EEFDF350;
+}
+section.card-login button {
+    min-width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: var(--verde-claro);
+    border: none;
+    border-radius: 8px;
+    text-align: start;
+}
+section.card-login button span {
+    padding: 5px;
+}
+section.card-login form > button {
+    min-width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+}
+section.card-login button:hover {
+    background-color: var(--primary);
+}
+/* MOBILE */
+@media (max-width: 600px){
+    section.card-login {
+        width: 300px;
+        height: 500px;
+    }
+}
+/* login */
+
+/* cadastro */
+
+main.cadastro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000dd;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+section.card-cadastro {
+    width: 600px;
+    height: 600px;
+    background-color: #2D3A3A;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-cadatro  {
+    width: 100%;
+    height: 10%;
+    border-bottom: 2px solid #EEFDF325;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.title-cadatro > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.title-cadatro > .x {
+    position: absolute;
+    right: 10px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+ .title-cadatro > .x i {
+    font-size: 2.5rem;
+}
+.x i:hover{
+    color: var(--primary);
+}
+.content-cadatro {
+    width: 90%;
+    height: 70%;
+    padding: 10px 0;
+}
+.content-cadatro > form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.content-cadatro > form > div {
+    width: 45%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content-cadatro > form > div label {
+    padding-bottom: 5px;
+}
+.content-cadatro > form > div input {
+    min-height: 42px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #EEFDF325;
+    border: 2px solid var(--primary);
+}
+.content-cadatro > form > div > .span-cadastro {
+    display: none;
+    max-width: 170px;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    bottom: 55px;
+    right: -15px;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #248232bb;
+    border-radius: 6px;
+    z-index: 1000;
+}
+.input-cadatro:hover ~ .span-cadastro{
+    display: block;
+}
+.content-cadatro > form > button {
+    min-width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    border-radius: 4px;
+    background-color: var(--verde-claro);
+}
+.content-cadatro > form > button:hover {
+    background-color: var(--primary);
+}
+
+.other-ways-cadatro {
+    width: 80%;
+    height: 20%;
+    border-top: 1px solid #EEFDF325;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.other-ways-cadatro > div {
+    display: flex;
+    gap: 20px;
+}
+.other-ways-cadatro > div > button{
+    width: max-content;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--verde-claro);
+}
+.other-ways-cadatro > div > button:hover {
+    background-color: var(--primary);
+}
+/* MOBILE */
+@media (max-width: 600px){
+    section.card-cadastro {
+        width: 300px;
+        height: 800px;
+    }
+}
+
+/* cadastro */

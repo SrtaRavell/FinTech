@@ -1,0 +1,7 @@
+primary - verde {
+    https://coolors.co/fcfffc-eefdf3-16db65-2ba84a-248232-2d3a3a-192525-040f0f
+}
+
+secodary - verde/azul {
+    https://coolors.co/353535-2f404c-284b63-395253-3c6e71-d9d9d9
+}
